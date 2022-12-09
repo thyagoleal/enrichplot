@@ -1,15 +1,15 @@
 ##' @rdname heatplot
 ##' @exportMethod heatplot
 setMethod("heatplot", signature(x = "enrichResult"),
-          function(x, showCategory = 30, ...) {
-              heatplot.enrichResult(x, showCategory, ...)
+          function(x, showCategory = 30, label_format = 30, ...) {
+              heatplot.enrichResult(x, showCategory, label_format = label_format, ...)
           })
 
 ##' @rdname heatplot
 ##' @exportMethod heatplot
 setMethod("heatplot", signature(x = "gseaResult"),
-          function(x, showCategory = 30, ...) {
-              heatplot.enrichResult(x, showCategory, ...)
+          function(x, showCategory = 30, label_format = 30,...) {
+              heatplot.enrichResult(x, showCategory, label_format = label_format, ...)
           })
 
 
